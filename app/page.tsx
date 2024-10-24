@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <div className="h-screen">
       <FloatingNavDemo />
-      <div className="h-64 h-[40rem]">
+      {/* <div className="h-64 h-[40rem]">
         <GridBackgroundDemo />
-      </div>
+      </div> */}
     </div>
   );
 }
