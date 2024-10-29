@@ -48,30 +48,11 @@ export function FloatingNavDemo() {
   return (
     <div className="relative w-full">
       <FloatingNav navItems={navItems} />
-      <DummyContent />
+      {/* <DummyContent /> */}
     </div>
   );
 }
 
 const DummyContent = () => {
-  return (
-    // <div className="grid grid-cols-1 h-[40rem] w-full bg-white dark:bg-black relative border border-neutral-200 dark:border-white/[0.2] rounded-md">
-    //   <BackgroundBeamsDemo />
-    // </div>
-    <div className="relative flex-col flex w-full items-center  justify-center overflow-hidden rounded-lg  bg-background md:p-20 p-6 ">
-        <Hero />
-
-        <AnimatedGridPattern
-          numSquares={50}
-          maxOpacity={0.1}
-          duration={3}
-          repeatDelay={2}
-          className={cn(
-            "[mask-image:linear-gradient(to_bottom,white,transparent,transparent)] ",
-            "inset-x-0 inset-y-[-50%] h-[400%] skew-y-12",
-          )}
-        />
-      </div>
-
-  );
+  
 };
