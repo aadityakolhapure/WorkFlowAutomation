@@ -1,13 +1,11 @@
 import React from "react";
 import { useId } from "react";
 
-export function FeaturesSectionDemo() {
+export function AboutSectionDemo() {
   return (
-    <div className="py-20 lg:py-40">
+    <div className="py-20 lg:py-40 mt-0">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
-      
         {grid.map((feature) => (
-            
           <div
             key={feature.title}
             className="relative bg-gradient-to-b dark:from-neutral-900 from-neutral-100 dark:to-neutral-950 to-white p-6 rounded-3xl overflow-hidden"
@@ -28,45 +26,46 @@ export function FeaturesSectionDemo() {
 
 const grid = [
   {
-    title: "Smart Bookmarking",
+    title: "Customizable Automation Sequences",
     description:
-      " Captures and organizes links from various platforms, enabling easy access to important content.",
+      " Build workflows to automatically save, tag, and categorize new information based on your rules and preferences.",
   },
   {
-    title: "Powerful Knowledge Search",
+    title: "Scheduled Content Resurfacing",
     description:
-      " Allows users to quickly locate saved information using advanced search functionalities.",
+      "Set reminders and schedules for important content to reappear exactly when you need it, keeping knowledge fresh and actionable.",
   },
   {
-    title: "Workflow Automation",
+    title: "Seamless Integration with Daily Tools",
     description:
-      "Automates repetitive tasks by integrating different technologies, enhancing efficiency and productivity.",
+      "Connect with your favorite apps to automate capturing, organizing, and updating content across platforms without manual effort.",
   },
   {
-    title: "Knowledge Canvas",
+    title: "Automated Knowledge Reminders",
     description:
-      "A visual tool for organizing and connecting ideas, facilitating creative thought and insight development.",
-  },
-//   {
-//     title: "Audience Targeting",
-//     description:
-//       "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
-//   },
-//   {
-//     title: "Social Listening",
-//     description:
-//       "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
-//   },
-//   {
-//     title: "Customizable Templates",
-//     description:
-//       "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
-//   },
-//   {
-//     title: "Collaboration Tools",
-//     description:
-//       "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
-//   },
+      "Automatically receive reminders on topics you've saved, helping you retain key information and revisit content at optimal times.",
+  }
+  
+  //   {
+  //     title: "Audience Targeting",
+  //     description:
+  //       "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
+  //   },
+  //   {
+  //     title: "Social Listening",
+  //     description:
+  //       "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
+  //   },
+  //   {
+  //     title: "Customizable Templates",
+  //     description:
+  //       "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
+  //   },
+  //   {
+  //     title: "Collaboration Tools",
+  //     description:
+  //       "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
+  //   },
 ];
 
 export const Grid = ({
@@ -85,7 +84,7 @@ export const Grid = ({
   ];
   return (
     <div className="pointer-events-none absolute left-1/2 top-0  -ml-20 -mt-2 h-full w-full [mask-image:linear-gradient(white,transparent)]">
-      <div className="absolute inset-0 bg-gradient-to-r  [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] dark:from-zinc-900/30 from-zinc-100/30 to-zinc-300/30 dark:to-zinc-900/30 opacity-100">
+      <div className="absolute inset-0 bg-gradient-to-r  [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] dark:from-zinc-900/30 from-zinc-100/30 to-zinc-300/30 dark:to-zinc-900/30 opacity-100 ">
         <GridPattern
           width={size ?? 20}
           height={size ?? 20}
@@ -103,7 +102,6 @@ export function GridPattern({ width, height, x, y, squares, ...props }: any) {
   const patternId = useId();
 
   return (
-    
     <svg aria-hidden="true" {...props}>
       <defs>
         <pattern
