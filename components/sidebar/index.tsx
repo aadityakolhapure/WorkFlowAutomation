@@ -13,6 +13,8 @@ import clsx from "clsx";
 import { Separator } from "@/components/ui/separator";
 import { Database, GitBranch, LucideMousePointerClick } from "lucide-react";
 import { ModeToggle } from "../global/mode-toggle";
+import Logo from "@/public/logo.svg";
+import Image from "next/image";
 
 type Props = {};
 
@@ -20,10 +22,16 @@ const MenuOptions = (props: Props) => {
   const pathName = usePathname();
 
   return (
-    <nav className=" dark:bg-black h-screen overflow-hidden  justify-between flex items-center flex-col  gap-10 py-6 px-2">
+    <nav className=" dark:bg-black h-screen overflow-auto  justify-between flex items-center flex-col  gap-10 py-6 px-2">
       <div className="flex items-center justify-center flex-col gap-8">
         <Link className="flex font-bold flex-row " href="/">
-          fuzzie.
+        <Image
+          src={Logo}
+          alt="Supermemory logo"
+          className="bg-gray-500 rounded-full"
+          width={30}
+          height={30}
+        />
         </Link>
         <TooltipProvider>
           {menuOptions.map((menuItem) => (

@@ -7,6 +7,7 @@ import { AnimatedBeamDemo } from "./AnimatedBeamShow";
 import DotPattern from "@/components/magicui/dot-pattern";
 import Link from "next/link";
 import ShinyButton from "@/components/magicui/shiny-button";
+import { GlobeDemo } from "./globe";
 
 
 const Services = () => {
@@ -122,7 +123,7 @@ const Services = () => {
                                 enjoy the benefits.
                             </p>
                             <a
-                                href="https://github.com/PremShinde-2013/BrainWave-AI"
+                                href="https://github.com/aadityakolhapure/WorkFlowAutomation.git" target="_blank"
                                 className="inline-flex gap-x-1 justify-center items-center py-4 px-10 text-center bg-transparent bg-gradient-to-tr to-transparent rounded-xl transition-colors sm:w-auto w-fit mt-[-20px] bg-glass-gradient group from-zinc-300/5 via-gray-400/5 border-white/10 border-[1px] hover:bg-transparent/10"
                             >
                                 <GithubIcon className="inline-flex justify-center items-center w-5 h-5" />{" "}

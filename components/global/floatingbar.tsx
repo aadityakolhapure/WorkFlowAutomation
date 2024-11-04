@@ -23,7 +23,7 @@ export function FloatingNavDemo() {
           alt="Supermemory logo"
           className="bg-gray-500 rounded-full"
           width={30}
-          height={30}
+          height={30} 
         />
       ),
     },
@@ -48,6 +48,7 @@ export function FloatingNavDemo() {
   return (
     <div className="relative w-full">
       <FloatingNav navItems={navItems} />
+      
       {/* <DummyContent /> */}
     </div>
   );

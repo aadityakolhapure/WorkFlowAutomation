@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { HomeIcon, UsersIcon, ListIcon, StarIcon } from "lucide-react"; // Add icons here
-import Groups2OutlinedIcon from '@mui/icons-material/Groups2Outlined';
+// import Groups2OutlinedIcon from '@mui/icons-material/Groups2Outlined';
 import ShinyButton from "@/components/magicui/shiny-button";
 
 export const SlideNavTabs = () => {

@@ -3,7 +3,7 @@ import { useId } from "react";
 
 export function AboutSectionDemo() {
   return (
-    <div className="py-20 lg:py-40 mt-0">
+    <div className="py-20 lg:py-20 mt-0">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-2 max-w-7xl mx-auto">
         {grid.map((feature) => (
           <div
@@ -45,27 +45,6 @@ const grid = [
     description:
       "Automatically receive reminders on topics you've saved, helping you retain key information and revisit content at optimal times.",
   }
-  
-  //   {
-  //     title: "Audience Targeting",
-  //     description:
-  //       "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
-  //   },
-  //   {
-  //     title: "Social Listening",
-  //     description:
-  //       "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
-  //   },
-  //   {
-  //     title: "Customizable Templates",
-  //     description:
-  //       "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
-  //   },
-  //   {
-  //     title: "Collaboration Tools",
-  //     description:
-  //       "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
-  //   },
 ];
 
 export const Grid = ({

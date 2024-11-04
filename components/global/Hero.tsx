@@ -67,7 +67,7 @@ function Hero() {
           without getting bogged down by repetitive tasks.
         </motion.p>
 
-        <Link href="/signin">
+        <Link href="/dashboard">
           <ShimmerButton className="shadow-2xl   ">
             <span className="flex whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
               It&apos;s free. Sign up now

@@ -9,8 +9,11 @@ import Services from "@/components/global/Services";
 import { cn } from "@/lib/utils";
 import { LampDesk } from "lucide-react";
 import { LampComponent } from "@/components/global/lamp";
-import { CardBody, CardContainer, CardItem } from '@/components/global/3d-card'
-import { CheckIcon } from 'lucide-react'
+import { CardBody, CardContainer, CardItem } from "@/components/global/3d-card";
+import { CheckIcon } from "lucide-react";
+import { ModeToggle } from "@/components/global/mode-toggle";
+import Footer from "@/components/global/footer";
+import "./globals.css";
 
 export default function Home() {
   return (
@@ -40,10 +43,13 @@ export default function Home() {
         <Services />
       </div>
 
-      <section className="">
-        <LampComponent/>
-        <div className="flex flex-wrap items-center justify-center flex-col md:flex-row gap-8 -mt-72">
-        <CardContainer className="inter-var ">
+      <h1 className="mt-20 dark:bg-black bg-gradient-to-br from-neutral-300 to-neutral-500 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl">
+        Plans That Fit You Best
+      </h1>
+
+      <section className="mt-32 mb-16">
+        <div className="flex flex-wrap items-center justify-center flex-col md:flex-row gap-8">
+          <CardContainer className="inter-var ">
             <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full md:!w-[350px] h-auto rounded-xl p-6 border">
               <CardItem
                 translateZ="50"
@@ -57,7 +63,8 @@ export default function Home() {
                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
               >
                 Get a glimpse of what our software is capable of. Just a heads
-                up {"you'll"} never leave us after this!
+                up
+                {"you'll"} never leave us after this!
                 <ul className="my-4 flex flex-col gap-2">
                   <li className="flex items-center gap-2">
                     <CheckIcon />3 Free automations
@@ -104,7 +111,8 @@ export default function Home() {
                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
               >
                 Get a glimpse of what our software is capable of. Just a heads
-                up {"you'll"} never leave us after this!
+                up
+                {"you'll"} never leave us after this!
                 <ul className="my-4 flex flex-col gap-2">
                   <li className="flex items-center gap-2">
                     <CheckIcon />3 Free automations
@@ -151,7 +159,8 @@ export default function Home() {
                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
               >
                 Get a glimpse of what our software is capable of. Just a heads
-                up {"you'll"} never leave us after this!
+                up
+                {"you'll"} never leave us after this!
                 <ul className="my-4 flex flex-col gap-2">
                   <li className="flex items-center gap-2">
                     <CheckIcon />3 Free automations
@@ -186,6 +195,19 @@ export default function Home() {
           </CardContainer>
         </div>
       </section>
+      {/* <div className="flex items-center justify-center flex-col gap-8">
+        <ModeToggle />
+      </div> */}
+
+      <Footer
+        companyName="Brainwave.ai"
+        copyrightYear={2023}
+        socialLinks={{
+          twitter: 'https://twitter.com/brainwaveai',
+          github: 'https://github.com/brainwaveai',
+          linkedin: 'https://www.linkedin.com/company/brainwaveai',
+        }}
+      />
     </div>
   );
 }
